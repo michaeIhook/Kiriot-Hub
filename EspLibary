@@ -8,8 +8,8 @@ local ESP = {
     FaceCamera = false,
     Names = true,
     TeamColor = true,
-    Thickness = 2,
-    AttachShift = 1,
+    Thickness = 1,
+    AttachShift = 0.5,
     TeamMates = true,
     Players = true,
     
@@ -292,7 +292,7 @@ function ESP:Add(obj, options)
 		Text = box.Name,
 		Color = box.Color,
 		Center = true,
-		Outline = true,
+		Outline = false,
         Size = 19,
         Visible = self.Enabled and self.Names
 	})
